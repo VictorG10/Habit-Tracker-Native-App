@@ -1,25 +1,20 @@
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+const LoginScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>LoginScreen</Text>
     </View>
   );
-}
+};
+
+export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  navButton: {
-    width: 100,
-    height: 40,
-    backgroundColor: "green",
-    borderRadius: 8,
-    textAlign: "center",
-    padding: 10,
   },
 });
