@@ -48,6 +48,8 @@ const AddHabitScreen = () => {
       );
 
       router.back();
+      setTitle("");
+      setDescription("");
     } catch (error) {
       if (error instanceof Error) {
         setError(error.message);
@@ -65,6 +67,7 @@ const AddHabitScreen = () => {
         style={styles.input}
         value={title}
         onChangeText={setTitle}
+        theme={{ colors: { primary: "#006400" } }}
       />
       <TextInput
         label="description"
@@ -72,6 +75,7 @@ const AddHabitScreen = () => {
         style={styles.input}
         value={description}
         onChangeText={setDescription}
+        theme={{ colors: { primary: "#006400" } }}
       />
       <View style={styles.frequencyContainer}>
         <SegmentedButtons
@@ -80,6 +84,12 @@ const AddHabitScreen = () => {
           buttons={FREQUENCIES.map((freq) => ({
             value: freq,
             label: freq.charAt(0).toUpperCase() + freq.slice(1),
+            style: {
+              backgroundColor: frequency === freq ? "#006400" : "#e0e0e0", // Active vs inactive background
+            },
+            labelStyle: {
+              color: frequency === freq ? "#fff" : "#000", // Active vs inactive text
+            },
           }))}
         />
       </View>
@@ -102,11 +112,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    // justifyContent: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#f5f5f5",
   },
   input: {
     marginBottom: 16,
+    borderColor: "#006400",
   },
   frequencyContainer: {
     marginBottom: 24,
