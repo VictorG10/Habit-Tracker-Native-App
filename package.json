@@ -1,5 +1,5 @@
 {
-  "name": "pedrotech-rn",
+  "name": "habit-tracker",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
