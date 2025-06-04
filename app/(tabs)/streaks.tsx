@@ -1,15 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const LoginScreen = () => {
+const StreaksScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>LoginScreen</Text>
+      <Text>StreaksScreen</Text>
     </View>
   );
 };
 
-export default LoginScreen;
+export default StreaksScreen;
 
 const styles = StyleSheet.create({
   container: {

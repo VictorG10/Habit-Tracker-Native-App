@@ -1,34 +1,71 @@
-import AntDesign from "@expo/vector-icons/AntDesign";
-import Entypo from "@expo/vector-icons/Entypo";
-import Feather from "@expo/vector-icons/Feather";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "green" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "green",
+        tabBarInactiveTintColor: "#666",
+        headerTitleAlign: "center",
+        headerStyle: {
+          // backgroundColor: "green",
+        },
+        headerShadowVisible: false,
+        tabBarStyle: {
+          // backgroundColor: "green",
+          borderTopWidth: 0,
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
-          tabBarIcon: ({ color, focused }) =>
+          title: "Today's Habits",
+          tabBarIcon: ({ color, focused, size }) =>
             focused ? (
-              <FontAwesome name="home" size={24} color={color} />
+              <MaterialCommunityIcons
+                name="calendar-today"
+                size={size}
+                color="green"
+              />
             ) : (
-              <AntDesign name="home" size={24} color="black" />
+              <MaterialCommunityIcons name="calendar-today" size={size} />
             ),
         }}
       />
       <Tabs.Screen
-        name="login"
+        name="streaks"
         options={{
-          title: "Login",
-          tabBarIcon: ({ color, focused }) =>
+          title: "Streaks",
+          tabBarIcon: ({ color, focused, size }) =>
             focused ? (
-              <Entypo name="login" size={24} color={color} />
+              <MaterialCommunityIcons
+                name="chart-line"
+                size={size}
+                color="green"
+              />
             ) : (
-              <Feather name="log-in" size={24} color="black" />
+              <MaterialCommunityIcons name="chart-line" size={size} />
+            ),
+        }}
+      />
+      <Tabs.Screen
+        name="add-habit"
+        options={{
+          title: "Add Habit",
+          tabBarIcon: ({ color, focused, size }) =>
+            focused ? (
+              <MaterialCommunityIcons
+                name="plus-circle"
+                size={size}
+                color="green"
+              />
+            ) : (
+              <MaterialCommunityIcons name="plus-circle" size={size} />
             ),
         }}
       />

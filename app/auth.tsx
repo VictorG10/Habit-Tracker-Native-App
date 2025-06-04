@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
   },
   input: {
     marginBottom: 16,
+    color: "#fff",
   },
   button: {
     marginTop: 8,

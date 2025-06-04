@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "pedrotech-rn",
-    "slug": "pedrotech-rn",
+    "name": "habit-tracker",
+    "slug": "habit-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "pedrotechrn",
+    "scheme": "habittracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
