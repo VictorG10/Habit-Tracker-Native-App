@@ -46,9 +46,15 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "0c5591e8-5a27-47ac-be9b-a79b98aed94f"
+        "projectId": "e4fb3e4e-5607-46e4-ba37-2e8e89470e7a"
       }
     },
-    "owner": "vg10"
+    "owner": "vg10",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e4fb3e4e-5607-46e4-ba37-2e8e89470e7a"
+    }
   }
 }
