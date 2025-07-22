@@ -38,7 +38,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
@@ -46,15 +47,13 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "e4fb3e4e-5607-46e4-ba37-2e8e89470e7a"
+        "projectId": "25cd6615-9bb7-4e78-b82b-e22667e33309"
       }
     },
     "owner": "vg10",
     "runtimeVersion": {
       "policy": "appVersion"
     },
-    "updates": {
-      // "url": "https://u.expo.dev/e4fb3e4e-5607-46e4-ba37-2e8e89470e7a"
-    }
+    "updates": {}
   }
 }
